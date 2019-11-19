@@ -65,7 +65,7 @@ function setup() {
 	line (1300,1150, 1300, 0 );
 	text ("2019", 1200, 600);
 
-  for (var i = 1; i < tax.getRowCount()-1; i++) {
+  for (var i = tax.getRowCount()-1; i > 1; i--) {
     if (tax.get(i, 3) != "") {
 		sNum = pNum;
       pNum = 1050 - int(tax.get(i, 2))/10000;
